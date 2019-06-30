@@ -16,13 +16,12 @@ body{
     font-size: 1.rem;
 }
 
-#searchTerm{
+#favorites{
     background-color: #ffffff;
     color: #21422e;
     padding: 1%;
     margin: 1%;
-    font-size: 1.rem;
-    width: 3%;
+    font-size: 1rem;
     border-radius: 5px;
 }
 

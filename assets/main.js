@@ -7,7 +7,7 @@ function submit() {
     var name = $("#searchInput").val();
     
     
-    searchArray.push(name);
+    searchArray.push(name.toUpperCase());
     
 /// increments the index of search array when a new name variable is added       
     j++
