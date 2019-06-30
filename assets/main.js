@@ -1,4 +1,5 @@
 var searchArray = [];
+/// declaring j  globally so can push new buttons to the DOM when a new name variable is added to searchArray
 var j = -1;
 function submit() {
     var name = $("#searchInput").val();
@@ -6,9 +7,10 @@ function submit() {
     
     searchArray.push(name);
     
-       
+/// increments the index of search array when a new name variable is added       
     j++
-    $("#search").append("<button id='searchTerm'>" + searchArray[j] + "</button>")
+/// appends a button to the DOM   
+    $("#search").append("<button id='searchTerm' data-person='" + searchArray[j] + "'>" + searchArray[j] + "</button>")
   console.log(j);
 }
 
