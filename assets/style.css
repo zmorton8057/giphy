@@ -1,0 +1,31 @@
+body{
+    background-color: #fdb797;
+}
+
+#searchInput{
+    background-color: #ffffff;
+    color: #21422e;
+    padding: 1%;
+    font-size: 1.rem;
+}
+
+#searchButton{
+    background-color: #21422e;
+    color: #ffffff;
+    padding: 1%;
+    font-size: 1.rem;
+}
+
+#searchTerm{
+    background-color: #ffffff;
+    color: #21422e;
+    padding: 1%;
+    margin: 1%;
+    font-size: 1.rem;
+    width: 3%;
+    border-radius: 5px;
+}
+
+#gifDiv{
+    border-radius: 5px;
+}

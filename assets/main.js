@@ -1,13 +1,15 @@
 var searchArray = [];
+var j = -1;
 function submit() {
     var name = $("#searchInput").val();
     
-
+    
     searchArray.push(name);
     
-        
-    $("#search").html("<div> " + searchArray.join(" ").toUpperCase() + "</div>")
-    
+       
+    j++
+    $("#search").append("<button id='searchTerm'>" + searchArray[j] + "</button>")
+  console.log(j);
 }
 
 
@@ -19,7 +21,7 @@ $("button").on("click", function () {
     var input = searchArray;
     console.log(searchArray)
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        input + "&api_key=dc6zaTOxFJmzC&limit=3";
+        input + "&api_key=dc6zaTOxFJmzC&limit=10";
 
     $.ajax({
         url: queryURL,
