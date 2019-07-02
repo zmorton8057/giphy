@@ -16,7 +16,7 @@ body{
     font-size: 1.rem;
 }
 
-#favorites{
+.favorites{
     background-color: #ffffff;
     color: #21422e;
     padding: 1%;
